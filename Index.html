@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+</head>
+<style>
+    body{
+        background-color: rgb(154, 126, 188);
+        margin: 0px;
+        border-radius: 20px;
+        padding: 20px;
+    }
+
+    #sum{
+        font-size: 3em;
+        color: white;
+    }
+    .container{
+        width: 350px;
+        height: 150px;
+        background-color: rgb(55, 184, 88);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+        border-radius: 20%;
+        margin-top: 190px;
+        margin-left: 400px;
+    }
+    .btns{
+        width: 310px;
+        padding: 10px 20px;
+        border-radius: 10px;
+        background-color: yellow;
+        font-size: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-left: 400px;
+        margin-top: 20px;
+        gap: 40px;
+        
+    }
+
+    @media(min-width:768px){
+        .btns{
+            flex-direction: row;
+            justify-content: space-around;
+        }
+    
+    }
+    
+    
+</style>
+<body>
+    <div class="container">
+        <div id="sum">
+            0
+        </div>
+    </div>
+    <div class="btns">
+        <button id="start" onclick="Startcount()">Start</button>
+        <button id="stop" onclick="stopClick()">Stop</button>
+        <button id="clear" onclick="clearClick()">Clear</button>
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>
